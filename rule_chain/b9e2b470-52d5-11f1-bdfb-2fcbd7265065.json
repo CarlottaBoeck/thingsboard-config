@@ -1,0 +1,439 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "b9e41405-52d5-11f1-bdfb-2fcbd7265065"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b9e2b470-52d5-11f1-bdfb-2fcbd7265065"
+    },
+    "name" : "Root Rule Chain",
+    "root" : true,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 5,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 12,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 2,
+      "type" : "False"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "True"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 2,
+      "type" : "False"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "True"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 9,
+      "type" : "True"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "False"
+    } ],
+    "firstNodeIndex" : 6,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1601,
+        "layoutY" : 147
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e3ecf0-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Save Booking Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1000,
+        "layoutY" : 167
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "CLIENT_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41400-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Save Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 566,
+        "layoutY" : 302
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41401-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1000,
+        "layoutY" : 381
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41402-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Log RPC from Device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1000,
+        "layoutY" : 494
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41403-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Log Other",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1000,
+        "layoutY" : 583
+      },
+      "configuration" : {
+        "timeoutInSeconds" : 60
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41404-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "RPC Call Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 255,
+        "layoutY" : 301
+      },
+      "configuration" : {
+        "originatorTypes" : [ "ENTITY_GROUP" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41405-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Is Entity Group",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 319,
+        "layoutY" : 109
+      },
+      "configuration" : {
+        "messageTypes" : [ "POST_ATTRIBUTES_REQUEST", "RPC_CALL_FROM_SERVER_TO_DEVICE" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41406-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Post attributes or RPC request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 627,
+        "layoutY" : 108
+      },
+      "configuration" : {
+        "entityGroupId" : null,
+        "entityGroupIsMessageOriginator" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b9e41407-52d5-11f1-bdfb-2fcbd7265065"
+      },
+      "name" : "Duplicate To Group Entities",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1295,
+        "layoutY" : 150
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Fixer Demonstrator-Wert: 100 Parkplätze\r\nvar totalSpaces = 100;\r\n\r\n// Eingehende belegte Plätze lesen\r\nvar occupiedSpaces = msg.occupied_spaces;\r\n\r\n// Falls nichts gesendet wurde\r\nif (occupiedSpaces == null) {\r\n    occupiedSpaces = 0;\r\n}\r\n\r\n// In Zahl umwandeln, falls ThingsBoard es als Text bekommt\r\noccupiedSpaces = Number(occupiedSpaces);\r\n\r\nif (isNaN(occupiedSpaces)) {\r\n    occupiedSpaces = 0;\r\n}\r\n\r\n// Grenzen absichern\r\nif (occupiedSpaces < 0) {\r\n    occupiedSpaces = 0;\r\n}\r\n\r\nif (occupiedSpaces > totalSpaces) {\r\n    occupiedSpaces = totalSpaces;\r\n}\r\n\r\n// Freie Plätze berechnen\r\nvar freeSpaces = totalSpaces - occupiedSpaces;\r\n\r\n// Auslastung berechnen\r\nvar occupancyRate = (occupiedSpaces / totalSpaces) * 100;\r\n\r\n// Basispreis\r\nvar basePrice = msg.base_price_per_hour;\r\n\r\nif (basePrice == null) {\r\n    basePrice = 2.0;\r\n}\r\n\r\nbasePrice = Number(basePrice);\r\n\r\nif (isNaN(basePrice)) {\r\n    basePrice = 2.0;\r\n}\r\n\r\n// Buchungsdauer\r\nvar duration = msg.requested_duration_hours;\r\n\r\nif (duration == null) {\r\n    duration = 1;\r\n}\r\n\r\nduration = Number(duration);\r\n\r\nif (isNaN(duration)) {\r\n    duration = 1;\r\n}\r\n\r\n// Preislogik\r\nvar priceFactor = 1.0;\r\nvar demandLevel = \"LOW\";\r\n\r\nif (occupancyRate < 50) {\r\n    priceFactor = 1.0;\r\n    demandLevel = \"LOW\";\r\n} else if (occupancyRate < 80) {\r\n    priceFactor = 1.2;\r\n    demandLevel = \"MEDIUM\";\r\n} else if (occupancyRate < 95) {\r\n    priceFactor = 1.5;\r\n    demandLevel = \"HIGH\";\r\n} else {\r\n    priceFactor = 2.0;\r\n    demandLevel = \"CRITICAL\";\r\n}\r\n\r\nvar currentPricePerHour = basePrice * priceFactor;\r\nvar bookingPrice = currentPricePerHour * duration;\r\n\r\n// Buchungslogik\r\nvar bookingStatus = msg.booking_status;\r\n\r\n// Falls booking_status fehlt, Status trotzdem sinnvoll setzen\r\nif (bookingStatus == null) {\r\n    bookingStatus = \"no_booking_request\";\r\n}\r\n\r\nvar reservedSpaceId = \"none\";\r\n\r\n// Nur bei echter Buchungsanfrage\r\nif (bookingStatus == \"requested\") {\r\n    if (freeSpaces > 0) {\r\n        bookingStatus = \"confirmed\";\r\n        reservedSpaceId = \"P-\" + (occupiedSpaces + 1);\r\n\r\n        occupiedSpaces = occupiedSpaces + 1;\r\n        freeSpaces = totalSpaces - occupiedSpaces;\r\n        occupancyRate = (occupiedSpaces / totalSpaces) * 100;\r\n    } else {\r\n        bookingStatus = \"rejected\";\r\n        reservedSpaceId = \"none\";\r\n    }\r\n}\r\n\r\n// Alles zurück in msg schreiben\r\nmsg.total_spaces = totalSpaces;\r\nmsg.occupied_spaces = occupiedSpaces;\r\nmsg.free_spaces = freeSpaces;\r\nmsg.occupancy_rate = Math.round(occupancyRate * 100) / 100;\r\nmsg.base_price_per_hour = basePrice;\r\nmsg.current_price_per_hour = Math.round(currentPricePerHour * 100) / 100;\r\nmsg.booking_price = Math.round(bookingPrice * 100) / 100;\r\nmsg.demand_level = demandLevel;\r\nmsg.booking_status = bookingStatus;\r\nmsg.reserved_space_id = reservedSpaceId;\r\n// Anzeige-Logik für Eingangsanzeige\r\nvar bookingAvailable = freeSpaces > 0;\r\nvar displayStatus = \"AVAILABLE\";\r\nvar displayMessage = freeSpaces + \" Plätze frei – Buchung möglich\";\r\n\r\nif (freeSpaces <= 0) {\r\n    bookingAvailable = false;\r\n    displayStatus = \"FULL\";\r\n    displayMessage = \"Parkhaus voll – keine Buchung möglich\";\r\n} else if (freeSpaces <= 10) {\r\n    displayStatus = \"LIMITED\";\r\n    displayMessage = \"Nur noch \" + freeSpaces + \" Plätze frei\";\r\n}\r\n\r\nmsg.booking_available = bookingAvailable;\r\nmsg.display_status = displayStatus;\r\nmsg.display_message = displayMessage;\r\n\r\n// Debug-Werte, damit ihr seht, ob die Logik läuft\r\nmsg.debug_script_executed = true;\r\nmsg.debug_free_spaces_before_booking = totalSpaces - Number(msg.occupied_spaces);\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "20239ed0-5d9d-11f1-98a7-a1ee92a74abb"
+      },
+      "name" : "Calculate Parking & Booking Data",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2253,
+        "layoutY" : 143
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://eu.thingsboard.cloud/api/v1/e6c1p24qzf2b5x4evyp3/telemetry",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : true,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 0,
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5b9551a0-5dcc-11f1-a6df-b7b5c1df0b6e"
+      },
+      "name" : "Update Entrance Display",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1932,
+        "layoutY" : 143
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var displayMsg = {\n    free_spaces: msg.free_spaces,\n    occupancy_rate: msg.occupancy_rate,\n    current_price_per_hour: msg.current_price_per_hour,\n    booking_available: msg.booking_available,\n    display_status: msg.display_status,\n    display_message: msg.display_message\n};\n\nreturn {msg: displayMsg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var displayMsg = {\n    free_spaces: msg.free_spaces,\n    occupancy_rate: msg.occupancy_rate,\n    current_price_per_hour: msg.current_price_per_hour,\n    booking_available: msg.booking_available,\n    display_status: msg.display_status,\n    display_message: msg.display_message\n};\n\nreturn {msg: displayMsg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5b9551a1-5dcc-11f1-a6df-b7b5c1df0b6e"
+      },
+      "name" : "Prepare Display Payload",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1002,
+        "layoutY" : 279
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.deviceName == \"external_booking_platform\";",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a156ae30-5df1-11f1-a6df-b7b5c1df0b6e"
+      },
+      "name" : "Check Booking Platform",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1290,
+        "layoutY" : 271
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a156ae31-5df1-11f1-a6df-b7b5c1df0b6e"
+      },
+      "name" : "Save Other Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
