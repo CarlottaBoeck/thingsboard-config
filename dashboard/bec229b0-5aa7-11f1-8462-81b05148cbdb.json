@@ -17,11 +17,12 @@
       "timewindow" : {
         "selectedTab" : 1,
         "history" : {
-          "timewindowMs" : 604800000,
-          "historyType" : 0
+          "historyType" : 0,
+          "timewindowMs" : 604800000
         },
         "aggregation" : {
-          "type" : "NONE"
+          "type" : "NONE",
+          "limit" : 25000
         }
       },
       "settings" : {
@@ -51,17 +52,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -216,17 +206,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -326,17 +305,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -555,17 +523,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -606,16 +563,16 @@
                 }
               },
               "rangeColors" : [ {
-                "from" : 0.0,
-                "to" : 30.0,
+                "from" : 0,
+                "to" : 30,
                 "color" : "#2196F3"
               }, {
-                "from" : 30.0,
-                "to" : 85.0,
+                "from" : 30,
+                "to" : 85,
                 "color" : "#4CAF50"
               }, {
-                "from" : 85.0,
-                "to" : 100.0,
+                "from" : 85,
+                "to" : 100,
                 "color" : "#F44336"
               } ]
             },
@@ -1021,17 +978,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -1125,17 +1071,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "4px",
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -1671,17 +1606,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -1900,17 +1824,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "4px",
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -2269,17 +2182,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -2750,17 +2652,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "4px",
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -2819,6 +2710,69 @@
           "id" : "fd49695c-a7aa-425c-b0ce-1c203a19d6d3",
           "typeFullFqn" : "system.alarm_widgets.alarms_table",
           "type" : "alarm"
+        },
+        "686f49e7-0198-3141-94ec-be5fcbe9638c" : {
+          "typeFullFqn" : "tenant.entrance_display_card",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "dataKeys" : [ {
+                "name" : "free_spaces",
+                "type" : "timeseries",
+                "label" : "free_spaces",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "occupancy_rate",
+                "type" : "timeseries",
+                "label" : "occupancy_rate",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "current_price_per_hour",
+                "type" : "timeseries",
+                "label" : "current_price_per_hour",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "display_status",
+                "type" : "timeseries",
+                "label" : "display_status",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "display_message",
+                "type" : "timeseries",
+                "label" : "display_message",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "booking_available",
+                "type" : "timeseries",
+                "label" : "booking_available",
+                "color" : "#9c27b0",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Entrance Display Card",
+            "decimals" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "686f49e7-0198-3141-94ec-be5fcbe9638c"
         }
       },
       "states" : {
@@ -2920,6 +2874,12 @@
                   "sizeY" : 1,
                   "col" : 0,
                   "row" : 0
+                },
+                "686f49e7-0198-3141-94ec-be5fcbe9638c" : {
+                  "sizeX" : 9,
+                  "sizeY" : 7,
+                  "row" : 15,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
@@ -3272,7 +3232,8 @@
       "additionalInfo" : {
         "description" : "Customer-level dashboard for monitoring garage occupancy, managing maintenance for barriers, and configuring dynamic pricing rules.",
         "aiGenerated" : true
-      }
+      },
+      "filters" : { }
     },
     "resources" : null,
     "externalId" : null

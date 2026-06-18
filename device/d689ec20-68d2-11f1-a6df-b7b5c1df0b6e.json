@@ -2,9 +2,7 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "gateway" : false,
-      "overwriteActivityTime" : false,
-      "description" : ""
+      "emulated" : true
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -21,22 +19,22 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "b9f0be30-52d5-11f1-bdfb-2fcbd7265065"
+      "id" : "7d042300-68d2-11f1-9511-2580300f449d"
     },
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "b8556660-5d99-11f1-9511-2580300f449d"
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
     },
-    "label" : "External Booking Platform",
-    "name" : "external_booking_platform",
+    "label" : null,
+    "name" : "Fast charging station",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "EV Fast Charging Station"
   },
   "credentials" : {
-    "credentialsId" : "CxEYcULBYtbqe8NWATcl",
+    "credentialsId" : "8M4IQ3fdt3lnln69AGPs",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +45,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1781803461916,
+      "lastUpdateTs" : 1781803403338,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -55,16 +53,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1781803461909,
-      "longValue" : 1781803461907,
+      "lastUpdateTs" : 1781803403335,
+      "longValue" : 1781803403334,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1781802828531,
-      "longValue" : 1781802826657,
+      "lastUpdateTs" : 1781802788111,
+      "longValue" : 1781802787115,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1781539018198,
+      "longValue" : 1781539018198,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1781625430313,
+      "longValue" : 1781625430313,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "munich_easypark2",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "41fa2670-69c6-11f1-98a7-a1ee92a74abb"
+    },
+    "image" : null,
+    "name" : "Munich EasyPark",
+    "order" : null,
+    "scada" : false,
+    "title" : "Munich EasyPark"
+  },
+  "fqns" : [ "entrance_display_card" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

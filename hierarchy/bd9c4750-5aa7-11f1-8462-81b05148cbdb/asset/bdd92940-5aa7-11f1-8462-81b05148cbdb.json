@@ -46,19 +46,6 @@
     },
     "to" : {
       "entityType" : "DEVICE",
-      "id" : "be01e6f0-5aa7-11f1-8462-81b05148cbdb"
-    },
-    "type" : "GarageToParkingSensor",
-    "typeGroup" : "COMMON",
-    "version" : 17595694
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
       "id" : "be239fc0-5aa7-11f1-8462-81b05148cbdb"
     },
     "type" : "GarageToParkingSensor",

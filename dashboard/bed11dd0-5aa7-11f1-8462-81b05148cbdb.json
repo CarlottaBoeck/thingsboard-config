@@ -17,11 +17,12 @@
       "timewindow" : {
         "selectedTab" : 1,
         "history" : {
-          "timewindowMs" : 604800000,
-          "historyType" : 0
+          "historyType" : 0,
+          "timewindowMs" : 604800000
         },
         "aggregation" : {
-          "type" : "NONE"
+          "type" : "NONE",
+          "limit" : 25000
         }
       },
       "settings" : {
@@ -364,17 +365,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -540,17 +530,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -629,17 +608,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -738,17 +706,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -1298,17 +1255,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "4px",
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -1584,6 +1530,184 @@
           "id" : "1d50fadb-ab88-43ef-bb40-79c808bcdaa7",
           "typeFullFqn" : "system.action_button",
           "type" : "latest"
+        },
+        "9bbd4aff-d361-7e6d-2691-3d4a213e8da8" : {
+          "typeFullFqn" : "system.cards.attributes_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "dataKeys" : [ {
+                "name" : "free_spaces",
+                "type" : "timeseries",
+                "label" : "Free Spaces",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "occupancy_rate",
+                "type" : "timeseries",
+                "label" : "Occupancy (%)",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "%",
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "current_price_per_hour",
+                "type" : "timeseries",
+                "label" : "Price (€/h)",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : "€",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "display_status",
+                "type" : "timeseries",
+                "label" : "Status",
+                "color" : "#ffc107",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "display_message",
+                "type" : "timeseries",
+                "label" : "Display Text",
+                "color" : "#607d8b",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "booking_available",
+                "type" : "timeseries",
+                "label" : "Bookable",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "showTitleIcon" : false,
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9bbd4aff-d361-7e6d-2691-3d4a213e8da8"
+        },
+        "df260b05-6775-4d97-3d0c-d925b786ab47" : {
+          "typeFullFqn" : "tenant.entrance_display_card",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "dataKeys" : [ {
+                "name" : "free_spaces",
+                "type" : "timeseries",
+                "label" : "free_spaces",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "occupancy_rate",
+                "type" : "timeseries",
+                "label" : "occupancy_rate",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "current_price_per_hour",
+                "type" : "timeseries",
+                "label" : "current_price_per_hour",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "display_status",
+                "type" : "timeseries",
+                "label" : "display_status",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "display_message",
+                "type" : "timeseries",
+                "label" : "display_message",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "booking_available",
+                "type" : "timeseries",
+                "label" : "booking_available",
+                "color" : "#9c27b0",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Entrance Display Card",
+            "decimals" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "df260b05-6775-4d97-3d0c-d925b786ab47"
         }
       },
       "states" : {
@@ -1745,6 +1869,18 @@
                   "sizeY" : 1,
                   "col" : 0,
                   "row" : 0
+                },
+                "9bbd4aff-d361-7e6d-2691-3d4a213e8da8" : {
+                  "sizeX" : 10,
+                  "sizeY" : 7,
+                  "row" : 15,
+                  "col" : 0
+                },
+                "df260b05-6775-4d97-3d0c-d925b786ab47" : {
+                  "sizeX" : 9,
+                  "sizeY" : 11,
+                  "row" : 15,
+                  "col" : 10
                 }
               },
               "gridSettings" : {
@@ -1926,12 +2062,23 @@
             "deviceTypes" : [ "BookingSystem" ],
             "type" : "deviceSearchQuery"
           }
+        },
+        "60d5da79-dc90-a441-72df-501dacfb8b47" : {
+          "id" : "60d5da79-dc90-a441-72df-501dacfb8b47",
+          "alias" : "Entrance Display Control",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "EntryBarrier" ],
+            "deviceNameFilter" : ""
+          }
         }
       },
       "additionalInfo" : {
         "description" : "Employee dashboard for checking real-time garage availability and managing personal parking reservations.",
         "aiGenerated" : true
-      }
+      },
+      "filters" : { }
     },
     "resources" : null,
     "externalId" : null

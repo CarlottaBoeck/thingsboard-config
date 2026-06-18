@@ -3502,6 +3502,69 @@
           "id" : "39a4ff1a-8fd3-4756-8a46-096d14642ddc",
           "typeFullFqn" : "system.state_chart",
           "type" : "timeseries"
+        },
+        "f47c620d-ef81-535e-4a98-67505f244b7c" : {
+          "typeFullFqn" : "tenant.entrance_display_card",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "dataKeys" : [ {
+                "name" : "free_spaces",
+                "type" : "timeseries",
+                "label" : "free_spaces",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "occupancy_rate",
+                "type" : "timeseries",
+                "label" : "occupancy_rate",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "current_price_per_hour",
+                "type" : "timeseries",
+                "label" : "current_price_per_hour",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "display_status",
+                "type" : "timeseries",
+                "label" : "display_status",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "display_message",
+                "type" : "timeseries",
+                "label" : "display_message",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "booking_available",
+                "type" : "timeseries",
+                "label" : "booking_available",
+                "color" : "#9c27b0",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Entrance Display Card",
+            "decimals" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f47c620d-ef81-535e-4a98-67505f244b7c"
         }
       },
       "states" : {
@@ -3563,6 +3626,12 @@
                   "sizeY" : 1,
                   "col" : 20,
                   "row" : 0
+                },
+                "f47c620d-ef81-535e-4a98-67505f244b7c" : {
+                  "sizeX" : 9,
+                  "sizeY" : 7,
+                  "row" : 15,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
