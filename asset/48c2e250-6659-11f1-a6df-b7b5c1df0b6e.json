@@ -22,7 +22,20 @@
     "ownerId" : null,
     "type" : "BookingSystem"
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "48c2e250-6659-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "GarageToBookingSystem",
+    "typeGroup" : "COMMON",
+    "version" : 18656249
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

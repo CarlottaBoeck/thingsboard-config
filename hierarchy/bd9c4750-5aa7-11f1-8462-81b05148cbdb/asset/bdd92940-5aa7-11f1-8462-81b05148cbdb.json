@@ -46,6 +46,19 @@
     },
     "to" : {
       "entityType" : "DEVICE",
+      "id" : "ad6e02f0-5dc3-11f1-9511-2580300f449d"
+    },
+    "type" : "GarageToEntryBarrier",
+    "typeGroup" : "COMMON",
+    "version" : 18656250
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
       "id" : "be239fc0-5aa7-11f1-8462-81b05148cbdb"
     },
     "type" : "GarageToParkingSensor",
@@ -64,6 +77,32 @@
     "type" : "GarageToParkingSensor",
     "typeGroup" : "COMMON",
     "version" : 17595697
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "GarageToEVCharger",
+    "typeGroup" : "COMMON",
+    "version" : 18656251
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "48c2e250-6659-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "GarageToBookingSystem",
+    "typeGroup" : "COMMON",
+    "version" : 18656249
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

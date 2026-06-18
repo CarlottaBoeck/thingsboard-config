@@ -38,7 +38,20 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "GarageToEVCharger",
+    "typeGroup" : "COMMON",
+    "version" : 18656251
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
