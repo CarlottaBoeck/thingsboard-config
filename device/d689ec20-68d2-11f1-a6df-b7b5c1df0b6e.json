@@ -51,6 +51,45 @@
     "type" : "GarageToEVCharger",
     "typeGroup" : "COMMON",
     "version" : 18656251
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "be32baf0-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "isChargedBy",
+    "typeGroup" : "COMMON",
+    "version" : 18689605
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "be32baf0-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "type" : "hasEVParkingSpot",
+    "typeGroup" : "COMMON",
+    "version" : 18689604
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "55dd2d70-6be4-11f1-a6df-b7b5c1df0b6e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "providesEnergyTo",
+    "typeGroup" : "COMMON",
+    "version" : 18689008
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -59,6 +98,22 @@
       "jsonValue" : null,
       "key" : "active",
       "lastUpdateTs" : 1781803403338,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.15,
+      "jsonValue" : null,
+      "key" : "evChargingPrice",
+      "lastUpdateTs" : 1781879556560,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.35,
+      "jsonValue" : null,
+      "key" : "evChargingPriceNormal",
+      "lastUpdateTs" : 1781879556560,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,6 +147,30 @@
       "key" : "lastDisconnectTime",
       "lastUpdateTs" : 1781625430313,
       "longValue" : 1781625430313,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pricingMode",
+      "lastUpdateTs" : 1781879556560,
+      "longValue" : null,
+      "strValue" : "solar_discount"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "solarPowerSnapshot",
+      "lastUpdateTs" : 1781879556560,
+      "longValue" : 9800,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "solarPricingActive",
+      "lastUpdateTs" : 1781879556560,
+      "longValue" : null,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

@@ -715,65 +715,28 @@
           "row" : 1,
           "col" : 0,
           "config" : {
-            "configMode" : "basic",
+            "showTitle" : true,
             "title" : "Demand Level",
-            "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "margin" : "0px",
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
-            "units" : "",
-            "decimals" : 0,
-            "actions" : { },
-            "settings" : {
-              "layout" : "horizontal",
-              "showLabel" : true,
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "showIcon" : true,
-              "icon" : "analytics",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "var(--tb-primary-500)"
-              },
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "valueFont" : {
-                "size" : 30
-              },
-              "labelFont" : {
-                "size" : 20
-              },
-              "showDate" : false,
-              "autoScale" : true
-            },
+            "settings" : { },
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
               "dataKeys" : [ {
                 "name" : "demandLevel",
-                "label" : "Demand Level",
                 "type" : "timeseries",
-                "color" : "var(--tb-primary-500)",
+                "label" : "Demand Level",
+                "color" : "#9C27B0",
                 "settings" : { }
-              } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              } ]
             } ]
           },
           "id" : "71eb3602-38aa-4448-99f5-1814ccfcd5f6",
-          "typeFullFqn" : "system.cards.horizontal_value_card",
-          "type" : "latest"
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries"
         },
         "8388f9d9-f368-4524-a9ba-bd61fb9bb78c" : {
           "sizeX" : 4,
@@ -835,65 +798,28 @@
           "row" : 0,
           "col" : 0,
           "config" : {
-            "configMode" : "basic",
+            "showTitle" : true,
             "title" : "Occupied Spaces",
-            "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "margin" : "0px",
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
-            "units" : "",
-            "decimals" : 0,
-            "actions" : { },
-            "settings" : {
-              "layout" : "horizontal",
-              "showLabel" : true,
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "showIcon" : true,
-              "icon" : "directions_car_filled",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "var(--tb-primary-500)"
-              },
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "valueFont" : {
-                "size" : 30
-              },
-              "labelFont" : {
-                "size" : 20
-              },
-              "showDate" : false,
-              "autoScale" : true
-            },
+            "settings" : { },
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
               "dataKeys" : [ {
                 "name" : "occupiedSpaces",
-                "label" : "Occupied Spaces",
                 "type" : "timeseries",
-                "color" : "var(--tb-primary-500)",
+                "label" : "Occupied Spaces",
+                "color" : "#F44336",
                 "settings" : { }
-              } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              } ]
             } ]
           },
           "id" : "bd522d74-efcc-4123-b4cc-0dea51188afb",
-          "typeFullFqn" : "system.cards.horizontal_value_card",
-          "type" : "latest"
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries"
         },
         "b39225f1-ffa2-4fa6-aedf-5fa0dbab772a" : {
           "sizeX" : 6,
@@ -1136,65 +1062,28 @@
           "row" : 0,
           "col" : 18,
           "config" : {
-            "configMode" : "basic",
+            "showTitle" : true,
             "title" : "Current Price",
-            "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "margin" : "0px",
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
-            "units" : "$/hr",
-            "decimals" : 2,
-            "actions" : { },
-            "settings" : {
-              "layout" : "horizontal",
-              "showLabel" : true,
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "showIcon" : true,
-              "icon" : "local_parking",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "var(--tb-primary-500)"
-              },
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "valueFont" : {
-                "size" : 30
-              },
-              "labelFont" : {
-                "size" : 20
-              },
-              "showDate" : false,
-              "autoScale" : true
-            },
+            "settings" : { },
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
               "dataKeys" : [ {
                 "name" : "currentPrice",
-                "label" : "Current Price",
                 "type" : "timeseries",
-                "color" : "var(--tb-primary-500)",
+                "label" : "Current Price",
+                "color" : "#FF9800",
                 "settings" : { }
-              } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              } ]
             } ]
           },
           "id" : "4b8864fd-9ca3-4f32-9155-126050368651",
-          "typeFullFqn" : "system.cards.horizontal_value_card",
-          "type" : "latest"
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries"
         },
         "bef8ae5c-9f1f-4cb9-8e1c-c75c9136a7e4" : {
           "sizeX" : 8,
@@ -1736,7 +1625,7 @@
                 "name" : null,
                 "icon" : null,
                 "type" : "custom",
-                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nparams.subStateId = \"garage-statistics\";\n\nwidgetContext.stateController.updateState(widgetContext.stateController.getStateId(), params);\nwidgetContext.updateAliases();"
+                "customFunction" : "widgetContext.stateController.openState('garage-statistics', {}, false);"
               } ]
             },
             "settings" : {
@@ -2052,65 +1941,28 @@
           "row" : 0,
           "col" : 12,
           "config" : {
-            "configMode" : "basic",
+            "showTitle" : true,
             "title" : "Total Spaces",
-            "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "margin" : "0px",
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
-            "units" : "",
-            "decimals" : 0,
-            "actions" : { },
-            "settings" : {
-              "layout" : "horizontal",
-              "showLabel" : true,
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "showIcon" : true,
-              "icon" : "local_parking",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "var(--tb-primary-500)"
-              },
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "valueFont" : {
-                "size" : 30
-              },
-              "labelFont" : {
-                "size" : 20
-              },
-              "showDate" : false,
-              "autoScale" : true
-            },
+            "settings" : { },
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
               "dataKeys" : [ {
                 "name" : "totalSpaces",
+                "type" : "timeseries",
                 "label" : "Total Spaces",
-                "type" : "attribute",
-                "color" : "var(--tb-primary-500)",
+                "color" : "#2196F3",
                 "settings" : { }
-              } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              } ]
             } ]
           },
           "id" : "d72bf592-907f-4967-b601-029a401b9fc0",
-          "typeFullFqn" : "system.cards.horizontal_value_card",
-          "type" : "latest"
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries"
         },
         "eec0c80f-c46d-483f-8c23-2c4b02c2b130" : {
           "sizeX" : 12,
@@ -2260,65 +2112,28 @@
           "row" : 0,
           "col" : 6,
           "config" : {
-            "configMode" : "basic",
+            "showTitle" : true,
             "title" : "Free Spaces",
-            "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "margin" : "0px",
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
-            "units" : "",
-            "decimals" : 0,
-            "actions" : { },
-            "settings" : {
-              "layout" : "horizontal",
-              "showLabel" : true,
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "showIcon" : true,
-              "icon" : "local_parking",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "var(--tb-primary-500)"
-              },
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#000000DE"
-              },
-              "valueFont" : {
-                "size" : 30
-              },
-              "labelFont" : {
-                "size" : 20
-              },
-              "showDate" : false,
-              "autoScale" : true
-            },
+            "settings" : { },
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
               "dataKeys" : [ {
                 "name" : "freeSpaces",
-                "label" : "Free Spaces",
                 "type" : "timeseries",
-                "color" : "var(--tb-primary-500)",
+                "label" : "Free Spaces",
+                "color" : "#4CAF50",
                 "settings" : { }
-              } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              } ]
             } ]
           },
           "id" : "c92b2e91-a308-4ec6-b991-38cb42cde28d",
-          "typeFullFqn" : "system.cards.horizontal_value_card",
-          "type" : "latest"
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries"
         },
         "35995489-11b9-4be7-b6b5-a20a27a2503e" : {
           "sizeX" : 12,
@@ -2512,10 +2327,10 @@
             "borderRadius" : "8px",
             "actions" : { },
             "settings" : {
-              "useMarkdownTextFunction" : true,
-              "markdownTextFunction" : "let subState = ctx.stateController.getStateParams().subStateId || \"garage-overview\";\n\nreturn `<div tb-toast toastTarget=\"layout\" class=\"block\">\n            <tb-dashboard-state class=\"state\" [ctx]=\"ctx\" stateId=\"${subState}\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n        </div>`;",
+              "useMarkdownTextFunction" : false,
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".block {\n    flex-grow: 1;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    padding: 0;\n}\n\n.state {\n    flex-grow: 1;\n    padding: 0;\n    width: 100%;\n    height: 100%;\n}"
+              "markdownCss" : ".block {\n    flex-grow: 1;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    padding: 0;\n}\n\n.state {\n    flex-grow: 1;\n    padding: 0;\n    width: 100%;\n    height: 100%;\n}",
+              "markdownTextPattern" : "### BMW Parkhaus Nordwest — Facility Overview\n\nKlicken Sie auf **Overview**, um Live-Garagenmetriken, Parksensoren und Solar/EV-Daten anzuzeigen.\n\nKlicken Sie auf **Statistics**, um historische Auslastungsdiagramme einzusehen."
             },
             "datasources" : [ {
               "type" : "entity",
@@ -2548,7 +2363,7 @@
                 "name" : null,
                 "icon" : null,
                 "type" : "custom",
-                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nparams.subStateId = \"garage-overview\";\n\nwidgetContext.stateController.updateState(widgetContext.stateController.getStateId(), params);\nwidgetContext.updateAliases();"
+                "customFunction" : "widgetContext.stateController.openState('garage-overview', {}, false);"
               } ]
             },
             "settings" : {
@@ -2712,7 +2527,7 @@
           "type" : "alarm"
         },
         "686f49e7-0198-3141-94ec-be5fcbe9638c" : {
-          "typeFullFqn" : "tenant.entrance_display_card",
+          "typeFullFqn" : "tenant.entrance_display_card_ev",
           "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 7,
@@ -2721,6 +2536,9 @@
               "type" : "device",
               "name" : "",
               "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
               "dataKeys" : [ {
                 "name" : "free_spaces",
                 "type" : "timeseries",
@@ -2757,10 +2575,13 @@
                 "label" : "booking_available",
                 "color" : "#9c27b0",
                 "settings" : { }
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
+              }, {
+                "name" : "evChargingPrice",
+                "label" : "EV Charging Price",
+                "type" : "timeseries",
+                "color" : "#00bcd4",
+                "settings" : { }
+              } ]
             } ],
             "showTitle" : true,
             "backgroundColor" : "#fff",
@@ -2773,6 +2594,235 @@
           "row" : 0,
           "col" : 0,
           "id" : "686f49e7-0198-3141-94ec-be5fcbe9638c"
+        },
+        "402d5263-580a-4ecf-a8a0-878cd8936952" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "title" : "Solar Power",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "23dfc02a-2a13-40a4-8948-4d884d42d7c9",
+              "dataKeys" : [ {
+                "name" : "solarPower",
+                "type" : "timeseries",
+                "label" : "Solar Power (W)",
+                "color" : "#FF9800",
+                "settings" : { }
+              } ]
+            } ]
+          },
+          "id" : "402d5263-580a-4ecf-a8a0-878cd8936952"
+        },
+        "9ad366a6-21ba-4915-bd86-841aef5dade3" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "title" : "Solar Discount",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "42e234a0-e000-4058-b060-59f697cdb0d5",
+              "dataKeys" : [ {
+                "name" : "solarPricingActive",
+                "type" : "timeseries",
+                "label" : "Solar Discount Active",
+                "color" : "#4CAF50",
+                "settings" : { }
+              } ]
+            } ]
+          },
+          "id" : "9ad366a6-21ba-4915-bd86-841aef5dade3"
+        },
+        "9e9b37c9-41ca-4d75-95c2-1e35496960e2" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "title" : "EV Charging Price",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "42e234a0-e000-4058-b060-59f697cdb0d5",
+              "dataKeys" : [ {
+                "name" : "evChargingPrice",
+                "type" : "timeseries",
+                "label" : "EV Price (€/kWh)",
+                "color" : "#2196F3",
+                "settings" : { }
+              } ]
+            } ]
+          },
+          "id" : "9e9b37c9-41ca-4d75-95c2-1e35496960e2"
+        },
+        "4c0dcb5a-5bef-4f82-838d-d50ecdd59614" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "title" : "☀️ Solarleistung",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "23dfc02a-2a13-40a4-8948-4d884d42d7c9",
+              "dataKeys" : [ {
+                "name" : "solarPower",
+                "type" : "timeseries",
+                "label" : "Solarleistung",
+                "units" : "W",
+                "decimals" : 0,
+                "color" : "#FF9800",
+                "settings" : { }
+              } ]
+            } ]
+          },
+          "id" : "4c0dcb5a-5bef-4f82-838d-d50ecdd59614"
+        },
+        "604b3a31-99fc-4ad8-8a83-33144160bf13" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Home",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "stroked",
+                "label" : "Home",
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px"
+              },
+              "activatedState" : {
+                "action" : "doNothing"
+              },
+              "disabledState" : {
+                "action" : "doNothing"
+              }
+            },
+            "datasources" : [ ],
+            "actions" : {
+              "click" : [ {
+                "id" : "23dab7da-bd5b-487a-ace8-20dbe3a4580f",
+                "name" : "Go to Home",
+                "icon" : "home",
+                "type" : "custom",
+                "customFunction" : "widgetContext.stateController.openState('root', {}, false);"
+              } ]
+            }
+          },
+          "id" : "604b3a31-99fc-4ad8-8a83-33144160bf13"
+        },
+        "8b22d930-a335-472e-be50-876cf744842d" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Home",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "stroked",
+                "label" : "Statistics",
+                "icon" : "show_chart",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px"
+              },
+              "activatedState" : {
+                "action" : "doNothing"
+              },
+              "disabledState" : {
+                "action" : "doNothing"
+              }
+            },
+            "datasources" : [ ],
+            "actions" : {
+              "click" : [ {
+                "id" : "23dab7da-bd5b-487a-ace8-20dbe3a4580f",
+                "name" : "Go to Statistics",
+                "icon" : "home",
+                "type" : "custom",
+                "customFunction" : "widgetContext.stateController.openState('garage-statistics', {}, false);"
+              } ]
+            }
+          },
+          "id" : "8b22d930-a335-472e-be50-876cf744842d"
+        },
+        "55580fa9-9e6c-4cef-aecb-b5d8f414fc22" : {
+          "id" : "55580fa9-9e6c-4cef-aecb-b5d8f414fc22",
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 7,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "title" : "EV Charging Price",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "42e234a0-e000-4058-b060-59f697cdb0d5",
+              "dataKeys" : [ {
+                "name" : "evChargingPrice",
+                "type" : "timeseries",
+                "label" : "EV Price (€/kWh)",
+                "color" : "#2196F3",
+                "settings" : { }
+              } ]
+            } ]
+          }
         }
       },
       "states" : {
@@ -2880,6 +2930,18 @@
                   "sizeY" : 7,
                   "row" : 15,
                   "col" : 0
+                },
+                "4c0dcb5a-5bef-4f82-838d-d50ecdd59614" : {
+                  "row" : 15,
+                  "col" : 9,
+                  "sizeX" : 8,
+                  "sizeY" : 3
+                },
+                "55580fa9-9e6c-4cef-aecb-b5d8f414fc22" : {
+                  "row" : 15,
+                  "col" : 17,
+                  "sizeX" : 7,
+                  "sizeY" : 3
                 }
               },
               "gridSettings" : {
@@ -3022,6 +3084,36 @@
                   "sizeY" : 4,
                   "col" : 0,
                   "row" : 7
+                },
+                "402d5263-580a-4ecf-a8a0-878cd8936952" : {
+                  "row" : 11,
+                  "col" : 0,
+                  "sizeX" : 8,
+                  "sizeY" : 3
+                },
+                "9ad366a6-21ba-4915-bd86-841aef5dade3" : {
+                  "row" : 11,
+                  "col" : 8,
+                  "sizeX" : 8,
+                  "sizeY" : 3
+                },
+                "9e9b37c9-41ca-4d75-95c2-1e35496960e2" : {
+                  "row" : 11,
+                  "col" : 16,
+                  "sizeX" : 8,
+                  "sizeY" : 3
+                },
+                "604b3a31-99fc-4ad8-8a83-33144160bf13" : {
+                  "row" : 14,
+                  "col" : 0,
+                  "sizeX" : 4,
+                  "sizeY" : 1
+                },
+                "8b22d930-a335-472e-be50-876cf744842d" : {
+                  "row" : 14,
+                  "col" : 4,
+                  "sizeX" : 4,
+                  "sizeY" : 1
                 }
               },
               "gridSettings" : {
@@ -3226,6 +3318,42 @@
             "stateEntityParamName" : "selectedEntryBarrier",
             "defaultStateEntity" : null,
             "type" : "stateEntity"
+          }
+        },
+        "23dfc02a-2a13-40a4-8948-4d884d42d7c9" : {
+          "id" : "23dfc02a-2a13-40a4-8948-4d884d42d7c9",
+          "alias" : "Solar Panel System",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "id" : "55dd2d70-6be4-11f1-a6df-b7b5c1df0b6e",
+              "entityType" : "DEVICE"
+            }
+          }
+        },
+        "42e234a0-e000-4058-b060-59f697cdb0d5" : {
+          "id" : "42e234a0-e000-4058-b060-59f697cdb0d5",
+          "alias" : "EV Fast Charger",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e",
+              "entityType" : "DEVICE"
+            }
+          }
+        },
+        "8b2ca1f1-3c8c-4f4a-84ce-67cbdc0157d7" : {
+          "id" : "8b2ca1f1-3c8c-4f4a-84ce-67cbdc0157d7",
+          "alias" : "Entry Barrier",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "ad6e02f0-5dc3-11f1-9511-2580300f449d"
+            },
+            "type" : "singleEntity"
           }
         }
       },

@@ -54,6 +54,32 @@
     "type" : "GarageToParkingSensor",
     "typeGroup" : "COMMON",
     "version" : 17595697
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "be32baf0-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "isChargedBy",
+    "typeGroup" : "COMMON",
+    "version" : 18689605
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "be32baf0-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "type" : "hasEVParkingSpot",
+    "typeGroup" : "COMMON",
+    "version" : 18689604
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -68,9 +94,41 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "evChargerName",
+      "lastUpdateTs" : 1781877745836,
+      "longValue" : null,
+      "strValue" : "Fast charging station"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.15,
+      "jsonValue" : null,
+      "key" : "evChargingPrice",
+      "lastUpdateTs" : 1781879556627,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.35,
+      "jsonValue" : null,
+      "key" : "evChargingPriceNormal",
+      "lastUpdateTs" : 1781879556627,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
       "lastUpdateTs" : 1781803463337,
       "longValue" : 1781803463337,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isEVSpot",
+      "lastUpdateTs" : 1781877745836,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -96,6 +154,46 @@
       "lastUpdateTs" : 1781635980295,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pricingMode",
+      "lastUpdateTs" : 1781879556627,
+      "longValue" : null,
+      "strValue" : "solar_discount"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "solarPowerSnapshot",
+      "lastUpdateTs" : 1781879556627,
+      "longValue" : 9800,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "solarPricingActive",
+      "lastUpdateTs" : 1781879556627,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "spotNumber",
+      "lastUpdateTs" : 1781877745836,
+      "longValue" : 4,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "spotType",
+      "lastUpdateTs" : 1781877745836,
+      "longValue" : null,
+      "strValue" : "EV_CHARGING"
     } ],
     "SHARED_SCOPE" : [ ]
   },

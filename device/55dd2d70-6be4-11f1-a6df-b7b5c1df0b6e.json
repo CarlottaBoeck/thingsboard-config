@@ -1,11 +1,7 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : {
-      "gateway" : false,
-      "overwriteActivityTime" : false,
-      "description" : "Digital display in front of the barrier showing available parking spaces for external guests."
-    },
+    "additionalInfo" : null,
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
@@ -21,38 +17,38 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "b9f0be30-52d5-11f1-bdfb-2fcbd7265065"
+      "id" : "4d960970-6be4-11f1-a6df-b7b5c1df0b6e"
     },
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "ad6e02f0-5dc3-11f1-9511-2580300f449d"
+      "id" : "55dd2d70-6be4-11f1-a6df-b7b5c1df0b6e"
     },
-    "label" : "Entrance Display Controller",
-    "name" : "entrance_display_controller",
+    "label" : "Solar Panel System",
+    "name" : "Solar Panel System",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "SolarPanel"
   },
   "credentials" : {
-    "credentialsId" : "e6c1p24qzf2b5x4evyp3",
+    "credentialsId" : "solar-panel-abc123",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
-      "entityType" : "ASSET",
-      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+      "entityType" : "DEVICE",
+      "id" : "55dd2d70-6be4-11f1-a6df-b7b5c1df0b6e"
     },
     "to" : {
       "entityType" : "DEVICE",
-      "id" : "ad6e02f0-5dc3-11f1-9511-2580300f449d"
+      "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
     },
-    "type" : "GarageToEntryBarrier",
+    "type" : "providesEnergyTo",
     "typeGroup" : "COMMON",
-    "version" : 18656250
+    "version" : 18689008
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -60,7 +56,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1781885909819,
+      "lastUpdateTs" : 1781879606610,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,16 +64,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1781885909806,
-      "longValue" : 1781885909804,
+      "lastUpdateTs" : 1781879606607,
+      "longValue" : 1781879606606,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1781885288110,
-      "longValue" : 1781885286499,
+      "lastUpdateTs" : 1781879001530,
+      "longValue" : 1781878999069,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

@@ -1,0 +1,391 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "fd096450-6be5-11f1-9511-2580300f449d"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "Solar & EV Charging",
+    "name" : "Solar & EV Charging",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "w1-b49ad003" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 9,
+          "sizeY" : 4,
+          "row" : 0,
+          "col" : 0,
+          "id" : "w1-b49ad003",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Solar Power (W)",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
+              "dataKeys" : [ {
+                "name" : "solarPower",
+                "type" : "timeseries",
+                "label" : "Solar Power",
+                "color" : "#F8A825",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w2-433f7072" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 9,
+          "sizeY" : 4,
+          "row" : 0,
+          "col" : 9,
+          "id" : "w2-433f7072",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Solar Irradiance (W/m²)",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
+              "dataKeys" : [ {
+                "name" : "solarIrradiance",
+                "type" : "timeseries",
+                "label" : "Irradiance",
+                "color" : "#ff9800",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w3-1b96a8ab" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 4,
+          "row" : 0,
+          "col" : 18,
+          "id" : "w3-1b96a8ab",
+          "config" : {
+            "showTitle" : true,
+            "title" : "EV Charging Price (€/kWh)",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+              "dataKeys" : [ {
+                "name" : "evChargingPrice",
+                "type" : "attribute",
+                "label" : "Price €/kWh",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w4-7eb1ab04" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 4,
+          "row" : 0,
+          "col" : 27,
+          "id" : "w4-7eb1ab04",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Pricing Mode",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+              "dataKeys" : [ {
+                "name" : "pricingMode",
+                "type" : "attribute",
+                "label" : "Mode",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w5-c2ca9d6d" : {
+          "typeFullFqn" : "system.charts.basic_timeseries",
+          "type" : "timeseries",
+          "sizeX" : 36,
+          "sizeY" : 8,
+          "row" : 4,
+          "col" : 0,
+          "id" : "w5-c2ca9d6d",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Solar Power & EV Output",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : {
+              "showLegend" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
+              "dataKeys" : [ {
+                "name" : "solarPower",
+                "type" : "timeseries",
+                "label" : "Solar Power (W)",
+                "color" : "#F8A825",
+                "settings" : { }
+              } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+              "dataKeys" : [ {
+                "name" : "powerOutput",
+                "type" : "timeseries",
+                "label" : "EV Output (W)",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w6-ead0d61e" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 12,
+          "col" : 0,
+          "id" : "w6-ead0d61e",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Charger State",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+              "dataKeys" : [ {
+                "name" : "chargerState",
+                "type" : "timeseries",
+                "label" : "State",
+                "color" : "#9c27b0",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w7-d5b1ae09" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 12,
+          "col" : 12,
+          "id" : "w7-d5b1ae09",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Session Energy (kWh)",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+              "dataKeys" : [ {
+                "name" : "sessionEnergy",
+                "type" : "timeseries",
+                "label" : "Energy kWh",
+                "color" : "#00bcd4",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        },
+        "w8-dd97c0ac" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 12,
+          "col" : 24,
+          "id" : "w8-dd97c0ac",
+          "config" : {
+            "showTitle" : true,
+            "title" : "Panel Efficiency (%)",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "8px",
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
+              "dataKeys" : [ {
+                "name" : "efficiency",
+                "type" : "timeseries",
+                "label" : "Efficiency %",
+                "color" : "#F8A825",
+                "settings" : { }
+              } ]
+            } ]
+          }
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Solar & EV Charging",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "w1-b49ad003" : {
+                  "sizeX" : 9,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 0,
+                  "mobileHeight" : null
+                },
+                "w2-433f7072" : {
+                  "sizeX" : 9,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 9,
+                  "mobileHeight" : null
+                },
+                "w3-1b96a8ab" : {
+                  "sizeX" : 9,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 18,
+                  "mobileHeight" : null
+                },
+                "w4-7eb1ab04" : {
+                  "sizeX" : 9,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 27,
+                  "mobileHeight" : null
+                },
+                "w5-c2ca9d6d" : {
+                  "sizeX" : 36,
+                  "sizeY" : 8,
+                  "row" : 4,
+                  "col" : 0,
+                  "mobileHeight" : null
+                },
+                "w6-ead0d61e" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 0,
+                  "mobileHeight" : null
+                },
+                "w7-d5b1ae09" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 12,
+                  "mobileHeight" : null
+                },
+                "w8-dd97c0ac" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 24,
+                  "mobileHeight" : null
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "margin" : 10,
+                "outerMargin" : true,
+                "columns" : 36
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "92fad120-4e7d-41d5-ad8f-66027f22626f" : {
+          "id" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
+          "alias" : "Solar Panel System",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "id" : "55dd2d70-6be4-11f1-a6df-b7b5c1df0b6e",
+              "entityType" : "DEVICE"
+            }
+          }
+        },
+        "bedda174-aec8-4f1d-a787-6eaf6b39a41c" : {
+          "id" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
+          "alias" : "Fast Charging Station",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e",
+              "entityType" : "DEVICE"
+            }
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "realtime" : {
+          "realtimeType" : 1,
+          "timewindowMs" : 3600000
+        },
+        "aggregation" : {
+          "type" : "NONE",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

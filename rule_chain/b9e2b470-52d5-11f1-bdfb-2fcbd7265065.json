@@ -76,8 +76,32 @@
       "type" : "True"
     }, {
       "fromIndex" : 12,
+      "toIndex" : 14,
+      "type" : "False"
+    }, {
+      "fromIndex" : 14,
       "toIndex" : 13,
       "type" : "False"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "True"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -143,7 +167,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugSettings" : null,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781879315511,
+        "failuresEnabled" : true
+      },
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -231,7 +259,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugSettings" : null,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781879315511,
+        "failuresEnabled" : true
+      },
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -382,9 +414,9 @@
         "layoutY" : 279
       },
       "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "return metadata.deviceName == \"external_booking_platform\";",
-        "tbelScript" : "return msg.temperature > 20;"
+        "scriptLang" : "TBEL",
+        "jsScript" : "return metadata.assetName === \"External Booking Platform\";",
+        "tbelScript" : "return metadata.assetName == 'External Booking Platform';"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -433,6 +465,189 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 700,
+        "layoutY" : 580
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return metadata.deviceName === \"Solar Panel System\";",
+        "tbelScript" : "return metadata.deviceName == 'Solar Panel System';"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781879315511,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db6682c0-6be4-11f1-9511-2580300f449d"
+      },
+      "name" : "Is Solar Panel",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 900,
+        "layoutY" : 580
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "var p=msg.solarPower||0;if(p>=5000){msg.evChargingPrice=0.15;msg.solarPricingActive=true;msg.pricingMode=\"solar_discount\";}else{msg.evChargingPrice=0.35;msg.solarPricingActive=false;msg.pricingMode=\"standard\";}msg.solarPowerSnapshot=p;return{msg:msg,metadata:metadata,msgType:msgType};",
+        "tbelScript" : "var p = msg.solarPower == null ? 0 : msg.solarPower;\nif (p >= 5000) {\n  msg.evChargingPrice = 0.15;\n  msg.solarPricingActive = true;\n  msg.pricingMode = 'solar_discount';\n} else {\n  msg.evChargingPrice = 0.35;\n  msg.solarPricingActive = false;\n  msg.pricingMode = 'standard';\n}\nmsg.solarPowerSnapshot = p;\nreturn {'msg': msg, 'metadata': metadata, 'msgType': msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781879315511,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db6682c1-6be4-11f1-9511-2580300f449d"
+      },
+      "name" : "Calculate EV Solar Price",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1100,
+        "layoutY" : 580
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "providesEnergyTo",
+            "entityTypes" : [ "DEVICE" ]
+          } ]
+        },
+        "preserveOriginatorIfCustomer" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781879315511,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db66a9d0-6be4-11f1-9511-2580300f449d"
+      },
+      "name" : "Switch to EV Charger",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1300,
+        "layoutY" : 580
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : true,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1781878851152,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db66a9d1-6be4-11f1-9511-2580300f449d"
+      },
+      "name" : "Save EV Pricing Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1100,
+        "layoutY" : 820
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "var payload = {\n  evChargingPrice: msg.evChargingPrice,\n  pricingMode: msg.pricingMode,\n  solarPricingActive: msg.solarPricingActive,\n  solarPowerSnapshot: msg.solarPowerSnapshot\n};\nreturn { msg: payload, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var payload = {};\npayload.evChargingPrice = msg.evChargingPrice;\npayload.pricingMode = msg.pricingMode;\npayload.solarPricingActive = msg.solarPricingActive;\npayload.solarPowerSnapshot = msg.solarPowerSnapshot;\nreturn {'msg': payload, 'metadata': metadata, 'msgType': msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9f2765a0-6be8-11f1-98a7-a1ee92a74abb"
+      },
+      "name" : "Prepare Pricing Payload",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1300,
+        "layoutY" : 820
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://eu.thingsboard.cloud/api/v1/irBwhLwkdiv1KKtGgqWF/attributes",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 5000,
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "useRedis" : false,
+        "trimDoubleQuotes" : false,
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9f278cb0-6be8-11f1-98a7-a1ee92a74abb"
+      },
+      "name" : "Save Pricing to Parking Spot",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
     } ],
     "ruleChainConnections" : null
   },
