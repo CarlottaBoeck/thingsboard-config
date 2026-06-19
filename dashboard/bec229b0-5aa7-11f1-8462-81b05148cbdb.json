@@ -1075,11 +1075,15 @@
               "dataKeys" : [ {
                 "name" : "currentPrice",
                 "type" : "timeseries",
-                "label" : "Current Price",
+                "label" : "Parkpreis",
                 "color" : "#FF9800",
-                "settings" : { }
+                "settings" : { },
+                "units" : "€/h",
+                "decimals" : 2
               } ]
-            } ]
+            } ],
+            "units" : "€/h",
+            "decimals" : 2
           },
           "id" : "4b8864fd-9ca3-4f32-9155-126050368651",
           "typeFullFqn" : "system.cards.aggregated_value_card",
@@ -2175,7 +2179,25 @@
               "showMinMax" : false,
               "barColor" : {
                 "type" : "function",
-                "colorFunction" : "if (typeof value === 'number') { if (value < 40) return '#4CAF50'; if (value < 80) return '#FFC107'; return '#F44336'; } return '#000000';"
+                "colorFunction" : "if (typeof value === 'number') { if (value < 40) return '#4CAF50'; if (value < 80) return '#FFC107'; return '#F44336'; } return '#000000';",
+                "color" : "#000000DE",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                }
               },
               "showValue" : true
             },
@@ -2668,11 +2690,15 @@
               "dataKeys" : [ {
                 "name" : "evChargingPrice",
                 "type" : "timeseries",
-                "label" : "EV Price (€/kWh)",
+                "label" : "EV-Ladepreis",
                 "color" : "#2196F3",
-                "settings" : { }
+                "settings" : { },
+                "units" : "€/kWh",
+                "decimals" : 2
               } ]
-            } ]
+            } ],
+            "units" : "€/kWh",
+            "decimals" : 2
           },
           "id" : "9e9b37c9-41ca-4d75-95c2-1e35496960e2"
         },
@@ -2817,11 +2843,15 @@
               "dataKeys" : [ {
                 "name" : "evChargingPrice",
                 "type" : "timeseries",
-                "label" : "EV Price (€/kWh)",
+                "label" : "EV-Ladepreis",
                 "color" : "#2196F3",
-                "settings" : { }
+                "settings" : { },
+                "units" : "€/kWh",
+                "decimals" : 2
               } ]
-            } ]
+            } ],
+            "units" : "€/kWh",
+            "decimals" : 2
           }
         }
       },
@@ -3021,7 +3051,7 @@
               "widgets" : {
                 "d72bf592-907f-4967-b601-029a401b9fc0" : {
                   "sizeX" : 6,
-                  "sizeY" : 1,
+                  "sizeY" : 2,
                   "col" : 12,
                   "row" : 0
                 },
@@ -3029,17 +3059,17 @@
                   "sizeX" : 12,
                   "sizeY" : 2,
                   "col" : 12,
-                  "row" : 1
+                  "row" : 2
                 },
                 "c92b2e91-a308-4ec6-b991-38cb42cde28d" : {
                   "sizeX" : 6,
-                  "sizeY" : 1,
+                  "sizeY" : 2,
                   "col" : 6,
                   "row" : 0
                 },
                 "4b8864fd-9ca3-4f32-9155-126050368651" : {
                   "sizeX" : 6,
-                  "sizeY" : 1,
+                  "sizeY" : 2,
                   "col" : 18,
                   "row" : 0
                 },
@@ -3047,35 +3077,35 @@
                   "sizeX" : 12,
                   "sizeY" : 4,
                   "col" : 0,
-                  "row" : 3
+                  "row" : 4
                 },
                 "bef8ae5c-9f1f-4cb9-8e1c-c75c9136a7e4" : {
                   "sizeX" : 8,
                   "sizeY" : 4,
                   "col" : 16,
-                  "row" : 7
+                  "row" : 8
                 },
                 "e871b743-c44d-4cc6-b6a9-c3cca18f4c0d" : {
                   "sizeX" : 8,
                   "sizeY" : 4,
                   "col" : 8,
-                  "row" : 7
+                  "row" : 8
                 },
                 "9c698e11-4009-49cf-8800-41ad855394a5" : {
                   "sizeX" : 12,
                   "sizeY" : 4,
                   "col" : 12,
-                  "row" : 3
+                  "row" : 4
                 },
                 "71eb3602-38aa-4448-99f5-1814ccfcd5f6" : {
                   "sizeX" : 12,
                   "sizeY" : 2,
                   "col" : 0,
-                  "row" : 1
+                  "row" : 2
                 },
                 "bd522d74-efcc-4123-b4cc-0dea51188afb" : {
                   "sizeX" : 6,
-                  "sizeY" : 1,
+                  "sizeY" : 2,
                   "col" : 0,
                   "row" : 0
                 },
@@ -3083,34 +3113,34 @@
                   "sizeX" : 8,
                   "sizeY" : 4,
                   "col" : 0,
-                  "row" : 7
+                  "row" : 8
                 },
                 "402d5263-580a-4ecf-a8a0-878cd8936952" : {
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 0,
                   "sizeX" : 8,
                   "sizeY" : 3
                 },
                 "9ad366a6-21ba-4915-bd86-841aef5dade3" : {
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 8,
                   "sizeX" : 8,
                   "sizeY" : 3
                 },
                 "9e9b37c9-41ca-4d75-95c2-1e35496960e2" : {
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 16,
                   "sizeX" : 8,
                   "sizeY" : 3
                 },
                 "604b3a31-99fc-4ad8-8a83-33144160bf13" : {
-                  "row" : 14,
+                  "row" : 15,
                   "col" : 0,
                   "sizeX" : 4,
                   "sizeY" : 1
                 },
                 "8b22d930-a335-472e-be50-876cf744842d" : {
-                  "row" : 14,
+                  "row" : 15,
                   "col" : 4,
                   "sizeX" : 4,
                   "sizeY" : 1
