@@ -159,8 +159,8 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 566,
-        "layoutY" : 302
+        "layoutX" : 606,
+        "layoutY" : 301
       },
       "configuration" : {
         "version" : 0
@@ -184,8 +184,8 @@
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1000,
-        "layoutY" : 381
+        "layoutX" : 1007,
+        "layoutY" : 345
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -207,8 +207,8 @@
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1000,
-        "layoutY" : 494
+        "layoutX" : 1022,
+        "layoutY" : 421
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -230,8 +230,8 @@
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1000,
-        "layoutY" : 583
+        "layoutX" : 1028,
+        "layoutY" : 484
       },
       "configuration" : {
         "timeoutInSeconds" : 60
@@ -442,8 +442,8 @@
     }, {
       "additionalInfo" : {
         "description" : null,
-        "layoutX" : 1290,
-        "layoutY" : 271
+        "layoutX" : 1632,
+        "layoutY" : 406
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -471,8 +471,8 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 700,
-        "layoutY" : 580
+        "layoutX" : 1317,
+        "layoutY" : 407
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -498,8 +498,8 @@
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 900,
-        "layoutY" : 580
+        "layoutX" : 1292,
+        "layoutY" : 575
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -525,8 +525,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1100,
-        "layoutY" : 580
+        "layoutX" : 1582,
+        "layoutY" : 578
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -560,8 +560,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1300,
-        "layoutY" : 580
+        "layoutX" : 1917,
+        "layoutY" : 583
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -591,8 +591,8 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1100,
-        "layoutY" : 820
+        "layoutX" : 2210,
+        "layoutY" : 584
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -614,8 +614,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1300,
-        "layoutY" : 820
+        "layoutX" : 2508,
+        "layoutY" : 582
       },
       "configuration" : {
         "restEndpointUrlPattern" : "https://eu.thingsboard.cloud/api/v1/irBwhLwkdiv1KKtGgqWF/attributes",

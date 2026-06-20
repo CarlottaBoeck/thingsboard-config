@@ -696,7 +696,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "basic",
-            "title" : "Occupancy Rate vs Predicted Tomorrow",
+            "title" : "Prognose Auslastung morgen (pro Stunde)",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -705,7 +705,7 @@
             },
             "showTitle" : true,
             "dropShadow" : false,
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -736,12 +736,13 @@
               "yAxes" : {
                 "default" : {
                   "id" : "default",
-                  "label" : "Occupancy (%)",
+                  "label" : "Auslastung %",
                   "position" : "left",
+                  "show" : true,
                   "min" : 0,
                   "max" : 100,
-                  "units" : "%",
-                  "decimals" : 1,
+                  "units" : "",
+                  "decimals" : 0,
                   "order" : 0
                 }
               }
@@ -749,30 +750,32 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupancy_rate",
-                "label" : "Current Occupancy",
+                "name" : "predictedOccupancyHourly",
+                "label" : "Prognose Auslastung (%)",
                 "type" : "timeseries",
-                "units" : "%",
-                "decimals" : 1,
-                "color" : "#2196F3",
+                "color" : "#7e57c2",
                 "settings" : {
-                  "yAxisId" : "default",
-                  "showLegend" : true
-                }
-              }, {
-                "name" : "predictedOccupancyTomorrow",
-                "label" : "Predicted Occupancy (Tomorrow)",
-                "type" : "timeseries",
-                "units" : "%",
-                "decimals" : 1,
-                "color" : "#4CAF50",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showLegend" : true
+                  "yAxisId" : "default"
                 }
               } ],
               "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
-            } ]
+            } ],
+            "displayTimewindow" : true,
+            "timewindow" : {
+              "hideInterval" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 1,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1781992800000,
+                  "endTimeMs" : 1782079199000
+                }
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 5000
+              }
+            }
           },
           "id" : "1d253184-00fb-410d-84f0-34c9fde1cf38",
           "typeFullFqn" : "system.time_series_chart",
