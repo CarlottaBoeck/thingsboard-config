@@ -17,65 +17,73 @@
       "description" : "",
       "widgets" : {
         "w1-b49ad003" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 4,
           "row" : 0,
           "col" : 0,
           "id" : "w1-b49ad003",
           "config" : {
-            "showTitle" : true,
-            "title" : "Solar Power (W)",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">☀️ Solarleistung</div><div style=\"font-size:34px;font-weight:700;color:#FF9800;line-height:1.1\">${solarPower}</div><div style=\"font-size:13px;color:#999;margin-top:4px\">W</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
               "dataKeys" : [ {
                 "name" : "solarPower",
                 "type" : "timeseries",
-                "label" : "Solar Power",
-                "color" : "#F8A825",
+                "label" : "solarPower",
                 "settings" : { }
               } ]
             } ]
           }
         },
         "w2-433f7072" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 4,
           "row" : 0,
           "col" : 9,
           "id" : "w2-433f7072",
           "config" : {
-            "showTitle" : true,
-            "title" : "Solar Irradiance (W/m²)",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">Einstrahlung</div><div style=\"font-size:34px;font-weight:700;color:#FFB300;line-height:1.1\">${solarIrradiance}</div><div style=\"font-size:13px;color:#999;margin-top:4px\">W/m²</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
               "dataKeys" : [ {
                 "name" : "solarIrradiance",
                 "type" : "timeseries",
-                "label" : "Irradiance",
-                "color" : "#ff9800",
+                "label" : "solarIrradiance",
                 "settings" : { }
               } ]
             } ]
           }
         },
         "w3-1b96a8ab" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 4,
@@ -83,28 +91,32 @@
           "col" : 18,
           "id" : "w3-1b96a8ab",
           "config" : {
-            "showTitle" : true,
-            "title" : "EV Charging Price (€/kWh)",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">⚡ EV-Ladepreis</div><div style=\"font-size:34px;font-weight:700;color:#00bcd4;line-height:1.1\">${evChargingPrice}</div><div style=\"font-size:13px;color:#999;margin-top:4px\">€ / kWh</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
               "dataKeys" : [ {
                 "name" : "evChargingPrice",
-                "type" : "attribute",
-                "label" : "Price €/kWh",
-                "color" : "#4caf50",
+                "type" : "timeseries",
+                "label" : "evChargingPrice",
                 "settings" : { }
               } ]
             } ]
           }
         },
         "w4-7eb1ab04" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 4,
@@ -112,21 +124,25 @@
           "col" : 27,
           "id" : "w4-7eb1ab04",
           "config" : {
-            "showTitle" : true,
-            "title" : "Pricing Mode",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">Preismodus</div><div style=\"font-size:34px;font-weight:700;color:#4caf50;line-height:1.1\">${pricingMode}</div><div style=\"font-size:13px;color:#999;margin-top:4px\"></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
               "dataKeys" : [ {
                 "name" : "pricingMode",
-                "type" : "attribute",
-                "label" : "Mode",
-                "color" : "#2196f3",
+                "type" : "timeseries",
+                "label" : "pricingMode",
                 "settings" : { }
               } ]
             } ]
@@ -174,87 +190,99 @@
           }
         },
         "w6-ead0d61e" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
           "sizeX" : 12,
           "sizeY" : 4,
           "row" : 12,
           "col" : 0,
           "id" : "w6-ead0d61e",
           "config" : {
-            "showTitle" : true,
-            "title" : "Charger State",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">Ladestatus</div><div style=\"font-size:34px;font-weight:700;color:#2196f3;line-height:1.1\">${chargerState}</div><div style=\"font-size:13px;color:#999;margin-top:4px\"></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
               "dataKeys" : [ {
                 "name" : "chargerState",
                 "type" : "timeseries",
-                "label" : "State",
-                "color" : "#9c27b0",
+                "label" : "chargerState",
                 "settings" : { }
               } ]
             } ]
           }
         },
         "w7-d5b1ae09" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
           "sizeX" : 12,
           "sizeY" : 4,
           "row" : 12,
           "col" : 12,
           "id" : "w7-d5b1ae09",
           "config" : {
-            "showTitle" : true,
-            "title" : "Session Energy (kWh)",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">Sitzungsenergie</div><div style=\"font-size:34px;font-weight:700;color:#9c27b0;line-height:1.1\">${sessionEnergy}</div><div style=\"font-size:13px;color:#999;margin-top:4px\">kWh</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "bedda174-aec8-4f1d-a787-6eaf6b39a41c",
               "dataKeys" : [ {
                 "name" : "sessionEnergy",
                 "type" : "timeseries",
-                "label" : "Energy kWh",
-                "color" : "#00bcd4",
+                "label" : "sessionEnergy",
                 "settings" : { }
               } ]
             } ]
           }
         },
         "w8-dd97c0ac" : {
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
           "sizeX" : 12,
           "sizeY" : 4,
           "row" : 12,
           "col" : 24,
           "id" : "w8-dd97c0ac",
           "config" : {
-            "showTitle" : true,
-            "title" : "Panel Efficiency (%)",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:14px;color:#666;margin-bottom:6px\">Wirkungsgrad</div><div style=\"font-size:34px;font-weight:700;color:#FF5722;line-height:1.1\">${efficiency}</div><div style=\"font-size:13px;color:#999;margin-top:4px\">%</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "92fad120-4e7d-41d5-ad8f-66027f22626f",
               "dataKeys" : [ {
                 "name" : "efficiency",
                 "type" : "timeseries",
-                "label" : "Efficiency %",
-                "color" : "#F8A825",
+                "label" : "efficiency",
                 "settings" : { }
               } ]
             } ]
@@ -369,7 +397,7 @@
       "timewindow" : {
         "realtime" : {
           "realtimeType" : 1,
-          "timewindowMs" : 3600000
+          "timewindowMs" : 86400000
         },
         "aggregation" : {
           "type" : "NONE",
