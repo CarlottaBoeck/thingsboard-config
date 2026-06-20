@@ -37,7 +37,15 @@
     "version" : 18656249
   } ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "occupiedCounter",
+      "lastUpdateTs" : 1781904148758,
+      "longValue" : 12,
+      "strValue" : null
+    } ]
   },
   "calculatedFields" : [ {
     "additionalInfo" : null,

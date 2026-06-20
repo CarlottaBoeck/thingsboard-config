@@ -500,13 +500,13 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "currentPrice",
+                "name" : "current_price_per_hour",
                 "label" : "Current Price",
                 "type" : "timeseries",
                 "color" : "var(--tb-primary-500)",
                 "settings" : { }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "5ff43c10-0f3d-45a9-bbe6-96b4b77359d5",
@@ -1011,13 +1011,13 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupiedSpaces",
+                "name" : "occupied_spaces",
                 "label" : "Occupied",
                 "type" : "timeseries",
                 "color" : "#000000DE",
                 "settings" : { }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "f0fc858c-c2b4-4779-9e32-c4537cad51f2",
@@ -1464,13 +1464,13 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupancyRate",
+                "name" : "occupancy_rate",
                 "label" : "Occupancy Rate",
                 "type" : "timeseries",
                 "color" : "var(--tb-primary-500)",
                 "settings" : { }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "48a4320a-5017-4150-b7c7-b51859d01be8",
@@ -1647,15 +1647,14 @@
           "id" : "9bbd4aff-d361-7e6d-2691-3d4a213e8da8"
         },
         "df260b05-6775-4d97-3d0c-d925b786ab47" : {
-          "typeFullFqn" : "tenant.entrance_display_card",
+          "typeFullFqn" : "tenant.entrance_display_card_ev",
           "type" : "latest",
           "sizeX" : 9,
           "sizeY" : 7,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
+              "type" : "entity",
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495",
               "dataKeys" : [ {
                 "name" : "free_spaces",
                 "type" : "timeseries",
@@ -1692,10 +1691,17 @@
                 "label" : "booking_available",
                 "color" : "#9c27b0",
                 "settings" : { }
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
+              } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "31a90fe0-1c8c-4116-9f0a-a37f14f235e9",
+              "dataKeys" : [ {
+                "name" : "evChargingPrice",
+                "label" : "EV Charging Price",
+                "type" : "timeseries",
+                "color" : "#00bcd4",
+                "settings" : { }
+              } ]
             } ],
             "showTitle" : true,
             "backgroundColor" : "#fff",
@@ -2071,6 +2077,30 @@
             "resolveMultiple" : true,
             "deviceTypes" : [ "EntryBarrier" ],
             "deviceNameFilter" : ""
+          }
+        },
+        "68627ba3-1983-44fa-bbcf-7c215f1d3495" : {
+          "id" : "68627ba3-1983-44fa-bbcf-7c215f1d3495",
+          "alias" : "Booking Platform",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "48c2e250-6659-11f1-a6df-b7b5c1df0b6e"
+            },
+            "type" : "singleEntity"
+          }
+        },
+        "31a90fe0-1c8c-4116-9f0a-a37f14f235e9" : {
+          "id" : "31a90fe0-1c8c-4116-9f0a-a37f14f235e9",
+          "alias" : "EV Charger",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "d689ec20-68d2-11f1-a6df-b7b5c1df0b6e"
+            },
+            "type" : "singleEntity"
           }
         }
       },

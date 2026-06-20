@@ -52,11 +52,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1781879606610,
+      "lastUpdateTs" : 1781940794110,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -72,8 +72,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1781879001530,
-      "longValue" : 1781878999069,
+      "lastUpdateTs" : 1781940876527,
+      "longValue" : 1781940875406,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

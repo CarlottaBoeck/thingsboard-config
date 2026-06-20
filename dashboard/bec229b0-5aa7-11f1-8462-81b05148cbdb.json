@@ -807,12 +807,14 @@
             "settings" : { },
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
-                "name" : "occupiedSpaces",
+                "name" : "occupied_spaces",
                 "type" : "timeseries",
                 "label" : "Occupied Spaces",
-                "color" : "#F44336",
+                "units" : "",
+                "decimals" : 0,
+                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ]
@@ -1071,15 +1073,15 @@
             "settings" : { },
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
-                "name" : "currentPrice",
+                "name" : "current_price_per_hour",
                 "type" : "timeseries",
                 "label" : "Parkpreis",
-                "color" : "#FF9800",
-                "settings" : { },
                 "units" : "€/h",
-                "decimals" : 2
+                "decimals" : 2,
+                "color" : "#2196F3",
+                "settings" : { }
               } ]
             } ],
             "units" : "€/h",
@@ -1954,11 +1956,13 @@
             "settings" : { },
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
-                "name" : "totalSpaces",
+                "name" : "total_spaces",
                 "type" : "timeseries",
                 "label" : "Total Spaces",
+                "units" : "",
+                "decimals" : 0,
                 "color" : "#2196F3",
                 "settings" : { }
               } ]
@@ -2125,12 +2129,14 @@
             "settings" : { },
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
-                "name" : "freeSpaces",
+                "name" : "free_spaces",
                 "type" : "timeseries",
                 "label" : "Free Spaces",
-                "color" : "#4CAF50",
+                "units" : "",
+                "decimals" : 0,
+                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ]
@@ -2555,12 +2561,8 @@
           "sizeY" : 7,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
+              "type" : "entity",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
                 "name" : "free_spaces",
                 "type" : "timeseries",
@@ -2597,7 +2599,11 @@
                 "label" : "booking_available",
                 "color" : "#9c27b0",
                 "settings" : { }
-              }, {
+              } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "42e234a0-e000-4058-b060-59f697cdb0d5",
+              "dataKeys" : [ {
                 "name" : "evChargingPrice",
                 "label" : "EV Charging Price",
                 "type" : "timeseries",
@@ -3382,6 +3388,18 @@
             "singleEntity" : {
               "entityType" : "DEVICE",
               "id" : "ad6e02f0-5dc3-11f1-9511-2580300f449d"
+            },
+            "type" : "singleEntity"
+          }
+        },
+        "b254e63e-5531-4b41-81ad-1a45d53e7c68" : {
+          "id" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
+          "alias" : "Booking Platform",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "48c2e250-6659-11f1-a6df-b7b5c1df0b6e"
             },
             "type" : "singleEntity"
           }
