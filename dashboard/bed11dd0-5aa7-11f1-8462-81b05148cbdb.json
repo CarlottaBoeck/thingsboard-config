@@ -418,7 +418,7 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupancyRate",
+                "name" : "occupancy_rate",
                 "label" : "Occupancy Rate",
                 "type" : "timeseries",
                 "units" : "",
@@ -429,7 +429,7 @@
                   "showLegend" : true
                 }
               }, {
-                "name" : "occupiedSpaces",
+                "name" : "occupied_spaces",
                 "label" : "Occupied Spaces",
                 "type" : "timeseries",
                 "units" : "",
@@ -440,7 +440,7 @@
                   "showLegend" : true
                 }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "f8a8734f-d189-41c2-a54d-4d4a5a5570f0",
@@ -573,7 +573,7 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "currentPrice",
+                "name" : "current_price_per_hour",
                 "label" : "Current Price",
                 "type" : "timeseries",
                 "units" : "",
@@ -584,7 +584,7 @@
                   "showLegend" : true
                 }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "e3a6e6fa-ac87-4cb9-a0e0-e59a16cd8d89",
@@ -749,7 +749,7 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupancyRate",
+                "name" : "occupancy_rate",
                 "label" : "Current Occupancy",
                 "type" : "timeseries",
                 "units" : "%",
@@ -771,7 +771,7 @@
                   "showLegend" : true
                 }
               } ],
-              "entityAliasId" : "418a0484-383d-49fe-99c9-ceea4361567f"
+              "entityAliasId" : "68627ba3-1983-44fa-bbcf-7c215f1d3495"
             } ]
           },
           "id" : "1d253184-00fb-410d-84f0-34c9fde1cf38",
@@ -1531,121 +1531,6 @@
           "typeFullFqn" : "system.action_button",
           "type" : "latest"
         },
-        "9bbd4aff-d361-7e6d-2691-3d4a213e8da8" : {
-          "typeFullFqn" : "system.cards.attributes_card",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "ad6e02f0-5dc3-11f1-9511-2580300f449d",
-              "dataKeys" : [ {
-                "name" : "free_spaces",
-                "type" : "timeseries",
-                "label" : "Free Spaces",
-                "color" : "#2196f3",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "occupancy_rate",
-                "type" : "timeseries",
-                "label" : "Occupancy (%)",
-                "color" : "#4caf50",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : "%",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "current_price_per_hour",
-                "type" : "timeseries",
-                "label" : "Price (€/h)",
-                "color" : "#f44336",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : "€",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "display_status",
-                "type" : "timeseries",
-                "label" : "Status",
-                "color" : "#ffc107",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "display_message",
-                "type" : "timeseries",
-                "label" : "Display Text",
-                "color" : "#607d8b",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "booking_available",
-                "type" : "timeseries",
-                "label" : "Bookable",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : { },
-            "title" : "Attributes card",
-            "decimals" : null,
-            "showTitleIcon" : false,
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "9bbd4aff-d361-7e6d-2691-3d4a213e8da8"
-        },
         "df260b05-6775-4d97-3d0c-d925b786ab47" : {
           "typeFullFqn" : "tenant.entrance_display_card_ev",
           "type" : "latest",
@@ -1853,9 +1738,9 @@
             "main" : {
               "widgets" : {
                 "7404d484-101a-498a-a688-8373f3aafadf" : {
-                  "sizeX" : 24,
+                  "sizeX" : 17,
                   "sizeY" : 14,
-                  "col" : 0,
+                  "col" : 7,
                   "row" : 1
                 },
                 "82cc7189-229e-4235-a5ad-1ae0f876d677" : {
@@ -1876,17 +1761,11 @@
                   "col" : 0,
                   "row" : 0
                 },
-                "9bbd4aff-d361-7e6d-2691-3d4a213e8da8" : {
-                  "sizeX" : 10,
-                  "sizeY" : 7,
-                  "row" : 15,
-                  "col" : 0
-                },
                 "df260b05-6775-4d97-3d0c-d925b786ab47" : {
-                  "sizeX" : 9,
-                  "sizeY" : 11,
-                  "row" : 15,
-                  "col" : 10
+                  "sizeX" : 7,
+                  "sizeY" : 14,
+                  "row" : 1,
+                  "col" : 0
                 }
               },
               "gridSettings" : {

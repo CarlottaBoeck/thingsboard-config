@@ -1,0 +1,33 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : null,
+          "body" : "Der Tagesreport ${reportName} wurde erstellt und per E-Mail versendet.",
+          "enabled" : true,
+          "subject" : "Tagesreport erstellt"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<div style=\"font-family:Arial,sans-serif;font-size:15px;color:#333;line-height:1.6;max-width:600px\"><p>Hallo Frau Mueller,</p><p>anbei erhalten Sie den Tagesreport zum <b>BMW Parkhaus Nordwest</b> fuer den gestrigen Tag.</p><p>Der Report enthaelt die aktuellen Auswertungen zur Nutzung, Auslastung und Optimierung des Parkhauses durch Munich EasyPark.</p><p>Das PDF-Dokument ist dieser E-Mail beigefuegt.</p><p>Mit freundlichen Gruessen<br><b>Munich EasyPark</b></p></div>",
+          "enabled" : true,
+          "subject" : "Tagesreport BMW Parkhaus Nordwest"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "264ce940-6cae-11f1-9511-2580300f449d"
+    },
+    "name" : "Tagesreport E-Mail (EasyPark)",
+    "notificationType" : "REPORT_GENERATED"
+  }
+}

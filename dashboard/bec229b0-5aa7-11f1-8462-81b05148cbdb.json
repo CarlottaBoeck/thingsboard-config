@@ -715,28 +715,32 @@
           "row" : 1,
           "col" : 0,
           "config" : {
-            "showTitle" : true,
-            "title" : "Demand Level",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:13px;color:#666;margin-bottom:6px\">Nachfrage</div><div style=\"font-size:30px;font-weight:700;color:#ff9800;line-height:1\">${demand_level}</div><div style=\"font-size:12px;color:#999;margin-top:4px\">LOW · MEDIUM · HIGH · CRITICAL</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
-                "name" : "demandLevel",
+                "name" : "demand_level",
                 "type" : "timeseries",
-                "label" : "Demand Level",
-                "color" : "#9C27B0",
+                "label" : "demand_level",
                 "settings" : { }
               } ]
             } ]
           },
           "id" : "71eb3602-38aa-4448-99f5-1814ccfcd5f6",
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries"
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
         },
         "8388f9d9-f368-4524-a9ba-bd61fb9bb78c" : {
           "sizeX" : 4,
@@ -798,30 +802,33 @@
           "row" : 0,
           "col" : 0,
           "config" : {
-            "showTitle" : true,
-            "title" : "Occupied Spaces",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:13px;color:#666;margin-bottom:6px\">Belegte Plätze</div><div style=\"font-size:38px;font-weight:700;color:#e74c3c;line-height:1\">${occupied_spaces:0}</div><div style=\"font-size:12px;color:#999;margin-top:4px\">belegt</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
                 "name" : "occupied_spaces",
                 "type" : "timeseries",
-                "label" : "Occupied Spaces",
-                "units" : "",
+                "label" : "occupied_spaces",
                 "decimals" : 0,
-                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ]
           },
           "id" : "bd522d74-efcc-4123-b4cc-0dea51188afb",
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries"
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
         },
         "b39225f1-ffa2-4fa6-aedf-5fa0dbab772a" : {
           "sizeX" : 6,
@@ -1064,23 +1071,26 @@
           "row" : 0,
           "col" : 18,
           "config" : {
-            "showTitle" : true,
-            "title" : "Current Price",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:13px;color:#666;margin-bottom:6px\">Aktueller Preis</div><div style=\"font-size:38px;font-weight:700;color:#2196f3;line-height:1\">${current_price_per_hour:2}</div><div style=\"font-size:12px;color:#999;margin-top:4px\">€ / Std</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
                 "name" : "current_price_per_hour",
                 "type" : "timeseries",
-                "label" : "Parkpreis",
-                "units" : "€/h",
+                "label" : "current_price_per_hour",
                 "decimals" : 2,
-                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ],
@@ -1088,8 +1098,8 @@
             "decimals" : 2
           },
           "id" : "4b8864fd-9ca3-4f32-9155-126050368651",
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries"
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
         },
         "bef8ae5c-9f1f-4cb9-8e1c-c75c9136a7e4" : {
           "sizeX" : 8,
@@ -1947,30 +1957,33 @@
           "row" : 0,
           "col" : 12,
           "config" : {
-            "showTitle" : true,
-            "title" : "Total Spaces",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:13px;color:#666;margin-bottom:6px\">Gesamt-Plätze</div><div style=\"font-size:38px;font-weight:700;color:#607d8b;line-height:1\">${total_spaces:0}</div><div style=\"font-size:12px;color:#999;margin-top:4px\">gesamt</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
                 "name" : "total_spaces",
                 "type" : "timeseries",
-                "label" : "Total Spaces",
-                "units" : "",
+                "label" : "total_spaces",
                 "decimals" : 0,
-                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ]
           },
           "id" : "d72bf592-907f-4967-b601-029a401b9fc0",
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries"
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
         },
         "eec0c80f-c46d-483f-8c23-2c4b02c2b130" : {
           "sizeX" : 12,
@@ -2120,30 +2133,33 @@
           "row" : 0,
           "col" : 6,
           "config" : {
-            "showTitle" : true,
-            "title" : "Free Spaces",
+            "showTitle" : false,
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
             "padding" : "0px",
-            "settings" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-family:Roboto,sans-serif\"><div style=\"font-size:13px;color:#666;margin-bottom:6px\">Freie Plätze</div><div style=\"font-size:38px;font-weight:700;color:#27ae60;line-height:1\">${free_spaces:0}</div><div style=\"font-size:12px;color:#999;margin-top:4px\">frei</div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ""
+            },
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
               "dataKeys" : [ {
                 "name" : "free_spaces",
                 "type" : "timeseries",
-                "label" : "Free Spaces",
-                "units" : "",
+                "label" : "free_spaces",
                 "decimals" : 0,
-                "color" : "#2196F3",
                 "settings" : { }
               } ]
             } ]
           },
           "id" : "c92b2e91-a308-4ec6-b991-38cb42cde28d",
-          "typeFullFqn" : "system.cards.aggregated_value_card",
-          "type" : "timeseries"
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
         },
         "35995489-11b9-4be7-b6b5-a20a27a2503e" : {
           "sizeX" : 12,
@@ -2859,6 +2875,90 @@
             "units" : "€/kWh",
             "decimals" : 2
           }
+        },
+        "7c4a97ea-63e8-442b-8b9f-a461d710caea" : {
+          "sizeX" : 12,
+          "sizeY" : 6,
+          "row" : 0,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Verlauf: Belegte & Freie Plätze",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "label" : "Plätze",
+                  "position" : "left",
+                  "show" : true,
+                  "min" : 0,
+                  "max" : 100,
+                  "units" : "",
+                  "decimals" : 0,
+                  "order" : 0
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68",
+              "dataKeys" : [ {
+                "name" : "occupied_spaces",
+                "label" : "Belegte Plätze",
+                "type" : "timeseries",
+                "color" : "#e74c3c",
+                "settings" : {
+                  "yAxisId" : "default"
+                }
+              }, {
+                "name" : "free_spaces",
+                "label" : "Freie Plätze",
+                "type" : "timeseries",
+                "color" : "#27ae60",
+                "settings" : {
+                  "yAxisId" : "default"
+                }
+              } ]
+            } ]
+          },
+          "id" : "7c4a97ea-63e8-442b-8b9f-a461d710caea",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
         }
       },
       "states" : {
@@ -2976,7 +3076,7 @@
                 "55580fa9-9e6c-4cef-aecb-b5d8f414fc22" : {
                   "row" : 4,
                   "col" : 17,
-                  "sizeX" : 7,
+                  "sizeX" : 8,
                   "sizeY" : 3
                 }
               },
@@ -3150,6 +3250,12 @@
                   "col" : 4,
                   "sizeX" : 4,
                   "sizeY" : 1
+                },
+                "7c4a97ea-63e8-442b-8b9f-a461d710caea" : {
+                  "row" : 16,
+                  "col" : 0,
+                  "sizeX" : 24,
+                  "sizeY" : 6
                 }
               },
               "gridSettings" : {
