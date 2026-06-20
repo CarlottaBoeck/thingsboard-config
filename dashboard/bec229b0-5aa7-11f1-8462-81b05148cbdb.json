@@ -2210,13 +2210,13 @@
             "datasources" : [ {
               "type" : "entity",
               "dataKeys" : [ {
-                "name" : "occupancyRate",
+                "name" : "occupancy_rate",
                 "label" : "Occupancy Rate",
                 "type" : "timeseries",
                 "color" : "#000000DE",
                 "settings" : { }
               } ],
-              "entityAliasId" : "d96338ee-edeb-4430-a00c-cd58e79f00f0"
+              "entityAliasId" : "b254e63e-5531-4b41-81ad-1a45d53e7c68"
             } ]
           },
           "id" : "35995489-11b9-4be7-b6b5-a20a27a2503e",
@@ -2939,7 +2939,7 @@
               "widgets" : {
                 "49d9f8f5-1962-4db3-b99f-802896741cd6" : {
                   "sizeX" : 24,
-                  "sizeY" : 14,
+                  "sizeY" : 3,
                   "col" : 0,
                   "row" : 1
                 },
@@ -2964,17 +2964,17 @@
                 "686f49e7-0198-3141-94ec-be5fcbe9638c" : {
                   "sizeX" : 9,
                   "sizeY" : 7,
-                  "row" : 15,
+                  "row" : 4,
                   "col" : 0
                 },
                 "4c0dcb5a-5bef-4f82-838d-d50ecdd59614" : {
-                  "row" : 15,
+                  "row" : 4,
                   "col" : 9,
                   "sizeX" : 8,
                   "sizeY" : 3
                 },
                 "55580fa9-9e6c-4cef-aecb-b5d8f414fc22" : {
-                  "row" : 15,
+                  "row" : 4,
                   "col" : 17,
                   "sizeX" : 7,
                   "sizeY" : 3
