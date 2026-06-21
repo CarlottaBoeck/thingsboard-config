@@ -1,0 +1,41 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "5edad150-6cc2-11f1-a6df-b7b5c1df0b6e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "76c47dc0-6cc2-11f1-9511-2580300f449d"
+    },
+    "label" : null,
+    "name" : "Reservierung Neuer",
+    "ownerId" : null,
+    "type" : "Reservation"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bdd92940-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "76c47dc0-6cc2-11f1-9511-2580300f449d"
+    },
+    "type" : "GarageToReservation",
+    "typeGroup" : "COMMON",
+    "version" : 18702728
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -767,8 +767,8 @@
               "history" : {
                 "historyType" : 1,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1781992800000,
-                  "endTimeMs" : 1782079199000
+                  "startTimeMs" : 1782165600000,
+                  "endTimeMs" : 1782251999000
                 }
               },
               "aggregation" : {
