@@ -13,7 +13,7 @@
         },
         "EMAIL" : {
           "method" : "EMAIL",
-          "body" : "<div style=\"font-family:Arial,sans-serif;font-size:15px;color:#333;line-height:1.6;max-width:600px\"><p>Hallo Frau Mueller,</p><p>anbei erhalten Sie den Tagesreport zum <b>BMW Parkhaus Nordwest</b> fuer den gestrigen Tag.</p><p>Der Report enthaelt die aktuellen Auswertungen zur Nutzung, Auslastung und Optimierung des Parkhauses durch Munich EasyPark.</p><p>Das PDF-Dokument ist dieser E-Mail beigefuegt.</p><p>Mit freundlichen Gruessen<br><b>Munich EasyPark</b></p></div>",
+          "body" : "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#2b2b2b;line-height:1.6;max-width:640px\"><p>Hallo Frau M&uuml;ller,</p><p>anbei erhalten Sie den Tagesreport zum <strong>BMW Parkhaus Nordwest</strong> f&uuml;r den gestrigen Tag. Der Report enth&auml;lt die aktuellen Auswertungen zur Nutzung, Auslastung und Optimierung des Parkhauses durch die <strong>VGS Versicherungsgesellschaft</strong>. Das PDF-Dokument ist dieser E-Mail beigef&uuml;gt.</p><p>Mit freundlichen Gr&uuml;&szlig;en<br>Ihr Team der VGS Versicherungsgesellschaft</p><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top:36px;border-top:1px solid #e2e2e2;padding-top:18px\"><tr><td align=\"left\" style=\"text-align:left\"><img src=\"https://cdn.phototourl.com/free/2026-06-21-0ae492c4-69fa-4eea-9624-98697cefcb69.png\" alt=\"VGS Versicherungsgesellschaft\" width=\"190\" style=\"display:block;margin:0 0 10px 0;border:0;outline:none\"><div style=\"font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5a5a5a;line-height:1.5\"><strong style=\"color:#16365c;font-size:14px\">VGS Versicherungsgesellschaft</strong><br>Parkraummanagement M&uuml;nchen &ndash; Nordwest &amp; Freimann<br>Moosacher Stra&szlig;e 61, 80809 M&uuml;nchen<br>nordwest@vgs-parking.de</div></td></tr></table></div>",
           "enabled" : true,
           "subject" : "Tagesreport BMW Parkhaus Nordwest"
         }
@@ -27,7 +27,7 @@
       "entityType" : "NOTIFICATION_TEMPLATE",
       "id" : "264ce940-6cae-11f1-9511-2580300f449d"
     },
-    "name" : "Tagesreport E-Mail (EasyPark)",
+    "name" : "Tagesreport E-Mail (VGS)",
     "notificationType" : "REPORT_GENERATED"
   }
 }

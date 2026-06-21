@@ -66,7 +66,7 @@
             "paddings" : null,
             "subType" : null,
             "type" : "RICH_TEXT",
-            "value" : "<p>EasyPark GmbH</p>\n<table style=\"border-collapse: collapse; width: 100%; border-width: 0px; height: 48px;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr style=\"height: 24px;\">\n<td style=\"border-width: 0px; height: 24px; line-height: 1.5; text-align: left;\"><span style=\"font-size: 14px; color: rgb(117, 117, 117);\">Am Stadtpark 20, 81243 München</span></td>\n</tr>\n</tbody>\n</table>"
+            "value" : "<p>VGS GmbH</p>\n<table style=\"border-collapse: collapse; width: 100%; border-width: 0px; height: 48px;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr style=\"height: 24px;\">\n<td style=\"border-width: 0px; height: 24px; line-height: 1.5; text-align: left;\"><span style=\"font-size: 14px; color: rgb(117, 117, 117);\">Am Stadtpark 20, 81243 München</span></td>\n</tr>\n</tbody>\n</table>"
           },
           "margins" : null,
           "paddings" : {

@@ -6,25 +6,25 @@
       "allowWhiteLabeling" : true,
       "homeDashboardHideToolbar" : true
     },
-    "address" : null,
-    "address2" : null,
-    "city" : null,
-    "country" : null,
+    "address" : "Moosacher Straße 61",
+    "address2" : "",
+    "city" : "München",
+    "country" : "Germany",
     "customMenuId" : null,
     "customerId" : null,
-    "email" : null,
+    "email" : "nordwest@vgs-parking.de",
     "externalId" : null,
     "id" : {
       "entityType" : "CUSTOMER",
       "id" : "bd9c4750-5aa7-11f1-8462-81b05148cbdb"
     },
-    "name" : "Munich EasyPark",
+    "name" : "VGS Parkhaus München Nordwest",
     "ownerId" : null,
     "parentCustomerId" : null,
-    "phone" : null,
-    "state" : null,
-    "title" : "Munich EasyPark",
-    "zip" : null
+    "phone" : "+49 89 1250 0",
+    "state" : "Bayern",
+    "title" : "VGS Parkhaus München Nordwest",
+    "zip" : "80809"
   },
   "relations" : [ {
     "additionalInfo" : null,

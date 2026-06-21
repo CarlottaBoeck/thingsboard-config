@@ -1,0 +1,76 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "bdd57fc0-5aa7-11f1-8462-81b05148cbdb"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "11740ef0-6d61-11f1-9511-2580300f449d"
+    },
+    "label" : "Parkhaus Freimann",
+    "name" : "BMW Parkhaus Freimann",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
+    },
+    "type" : "Garage"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "11740ef0-6d61-11f1-9511-2580300f449d"
+    },
+    "type" : "Operates",
+    "typeGroup" : "COMMON",
+    "version" : 18706884
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1782039909816,
+      "longValue" : null,
+      "strValue" : "Heidemannstraße 230, 80939 München"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.1981,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1782039909816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 11.6052,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1782039909816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "totalSpaces",
+      "lastUpdateTs" : 1782039909816,
+      "longValue" : 150,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

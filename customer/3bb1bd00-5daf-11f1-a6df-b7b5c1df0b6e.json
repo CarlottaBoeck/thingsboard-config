@@ -7,27 +7,40 @@
       "homeDashboardId" : null,
       "homeDashboardHideToolbar" : true
     },
-    "address" : null,
-    "address2" : null,
-    "city" : null,
-    "country" : null,
+    "address" : "Heidemannstraße 230",
+    "address2" : "",
+    "city" : "München",
+    "country" : "Germany",
     "customMenuId" : null,
     "customerId" : null,
-    "email" : null,
+    "email" : "freimann@vgs-parking.de",
     "externalId" : null,
     "id" : {
       "entityType" : "CUSTOMER",
       "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
     },
-    "name" : "BMW Group",
+    "name" : "VGS Parkhaus München Freimann",
     "ownerId" : null,
     "parentCustomerId" : null,
-    "phone" : null,
-    "state" : null,
-    "title" : "BMW Group",
-    "zip" : null
+    "phone" : "+49 89 3200 0",
+    "state" : "Bayern",
+    "title" : "VGS Parkhaus München Freimann",
+    "zip" : "80939"
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "11740ef0-6d61-11f1-9511-2580300f449d"
+    },
+    "type" : "Operates",
+    "typeGroup" : "COMMON",
+    "version" : 18706884
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

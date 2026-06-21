@@ -1,10 +1,7 @@
 {
   "entityType" : "ENTITY_GROUP",
   "entity" : {
-    "additionalInfo" : {
-      "description" : "Tenant-level dashboard for provisioning clients, managing global settings, and monitoring system-wide device connectivity.",
-      "aiGenerated" : true
-    },
+    "additionalInfo" : null,
     "configuration" : {
       "columns" : [ {
         "type" : "ENTITY_FIELD",
@@ -13,6 +10,18 @@
       }, {
         "type" : "ENTITY_FIELD",
         "key" : "title",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "country",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "city",
         "sortOrder" : "NONE"
       } ],
       "settings" : { },
@@ -23,18 +32,19 @@
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
-      "id" : "beabe290-5aa7-11f1-8462-81b05148cbdb"
+      "id" : "00582cf0-6d61-11f1-9511-2580300f449d"
     },
-    "name" : "Dashboards for Administrator",
+    "name" : "CorporateClient",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "b9e12dd0-52d5-11f1-bdfb-2fcbd7265065"
     },
-    "type" : "DASHBOARD"
+    "type" : "CUSTOMER"
   },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },
+  "calculatedFields" : [ ],
   "groupEntities" : true
 }

@@ -2,8 +2,7 @@
   "entityType" : "ENTITY_GROUP",
   "entity" : {
     "additionalInfo" : {
-      "description" : "Tenant-level dashboard for provisioning clients, managing global settings, and monitoring system-wide device connectivity.",
-      "aiGenerated" : true
+      "description" : ""
     },
     "configuration" : {
       "columns" : [ {
@@ -12,7 +11,15 @@
         "sortOrder" : "DESC"
       }, {
         "type" : "ENTITY_FIELD",
-        "key" : "title",
+        "key" : "first_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "last_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
         "sortOrder" : "NONE"
       } ],
       "settings" : { },
@@ -23,18 +30,19 @@
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
-      "id" : "beabe290-5aa7-11f1-8462-81b05148cbdb"
+      "id" : "ba3b8370-6d5b-11f1-98a7-a1ee92a74abb"
     },
-    "name" : "Dashboards for Administrator",
+    "name" : "Facility Manager",
     "ownerId" : {
-      "entityType" : "TENANT",
-      "id" : "b9e12dd0-52d5-11f1-bdfb-2fcbd7265065"
+      "entityType" : "CUSTOMER",
+      "id" : "3bb1bd00-5daf-11f1-a6df-b7b5c1df0b6e"
     },
-    "type" : "DASHBOARD"
+    "type" : "USER"
   },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },
-  "groupEntities" : true
+  "groupEntities" : true,
+  "permissions" : [ ]
 }
